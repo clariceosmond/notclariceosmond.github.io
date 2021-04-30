@@ -1,0 +1,105 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@font-face{
+  font-family:"Pixelar Regular W01 Regular";
+  src:url("4d8bd4f0-ce40-4f34-a0b8-49bc51024ea8.woff2") format("woff2"),
+  url("9c200a14-d264-405c-86bf-d27b840e86be.woff") format("woff");
+}
+
+.imgic {
+  margin: 7.5px;
+  width: 35px;
+  height: 35px;
+}
+#iconboard {
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconunit:hover .icontip {
+  display: block;
+}
+
+.icontip {
+  position: absolute;
+  display: none;
+  width: 100px;
+  height:25px;
+  border: 5px solid transparent;
+  border-image: url("brown-bor.png") 16 stretch;
+  z-index: 1;
+  background-image: url("bg-brown.png");
+}
+
+.iconunit {
+  height: 50px;
+  width: 50px;
+  background-image : url("icon-bg.png");
+  margin: 10px;
+  position: relative;
+  z-index: 0;
+}
+
+.iconunit:hover {
+  background-image: url("icon-shade.png");
+}
+
+.toolitem {
+  border: 10px solid transparent;
+  border-image: url("brown-bor.png") 16 stretch;
+  background-image: url("icon-bg.png");
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1000px;
+  margin-left: 10px;
+  flex-direction: row;
+  text-align: right;
+}
+
+.mainboxitem {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 16px solid transparent;
+  border-image: url("brown-bor.png") 16 stretch;
+  background-image: url("bg-brown.png");
+  overflow: hidden;
+}
+
+.mainboxitem h1 {
+  font-size: 50px;
+}
+
+.mainboxitem h2 {
+  font-size: 30px;
+}
+
+#iconpic {
+  height:auto;
+  width: 300px;
+  padding: 10px 10px;
+}
+
+
+.mainbox {
+  display: flex;
+  max-width: 1000px;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+div {
+  font-family:"Pixelar Regular W01 Regular";
+}
